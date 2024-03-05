@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <h3>Alexander Bolyakov</h3>
+    <p>Back End Assessment</p>
+    <br>
+    <h4>Click to receive a random Compliment</h4>
+    <button id="complimentButton">Get a compliment</button>
+    <br>
+    <br>
+    <h4>Click to get a random Fortune</h4>
+    <button id="fortuneButton">Get a fortune</button>
+    <br>
+    <section class="all-fortunes">
+      <br>
+      <h4>Click to get all Fortunes</h4>
+      <button id="getSubmit">Get All Fortunes</button>
+    </section>
+    <br>
+    <section>
+      <h4>Fortune ID search</h4>
+      <p>Click below to select a number to get a fortune from the list</p>
+      <select id="params-input">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <button id="getParamsSubmit">Get a fortune by ID</button>
+    </section>
+    
+    <section>
+      <br>
+      <h4>Click below to select a fortune to delete and see an updated fortune list</h4>
+      <select id="delete-input">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <button id="delete-fortune">Delete</button>
+      <p>See the response below</p>
+    </section>
+    <br>
+    <section class="response-area"></section>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
